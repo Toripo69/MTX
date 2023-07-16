@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="homepage.css">
+  <title>Homepage</title>
+</head>
+
+<body>
+  <div class="overlay">
+    <div class="background-video">
+      <video src="back.mov" autoplay loop muted class="background-video-source"></video>
+    </div>
+    <div class="row">
+      <div class="pictogram-container">
+        <span class="pictogram-letter video-pictogram">A</span>
+      </div>
+
+      <div class="pictogram-container">
+        <span class="pictogram-letter text-pictogram">B</span>
+      </div>
+
+      <div class="pictogram-container">
+        <span class="pictogram-letter pictogram-3">C</span>
+      </div>
+
+      <div class="pictogram-container letter">
+        <span class="pictogram-letter pictogram-letter-d">D</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="pictogram-container letter">
+        <span class="pictogram-letter pictogram-letter-e">E</span>
+      </div>
+      <div class="pictogram-container">
+        <span class="pictogram-letter">F</span>
+      </div>
+      <div class="pictogram-container">
+        <span class="pictogram-letter">G</span>
+      </div>
+      <div class="pictogram-container">
+        <span class="pictogram-letter pictogram-letter-h">H</span>
+      </div>
+      <div id="startMenu" class="start-menu hidden">
+        <ul>
+          <li><a href="#">New Game</a></li>
+          <li><a href="#">Load Game</a></li>
+          <li><a href="#">Options</a></li>
+          <li><a href="#">Exit</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="videoModal" class="modal video-modal">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-content">
+      <video src="video.mp4" controls></video>
+    </div>
+  </div>
+  <div id="textModal" class="modal text-modal">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-content">
+      <p class="text">ABOUT US<br><br>
+        In the dawn of the digital age, a revolution took shape—a revolution that redefined our perception of reality.
+        The Matrix emerged as the embodiment of this paradigm shift, a groundbreaking film that captured the
+        imagination of millions worldwide. It unveiled a world where boundaries were shattered, where possibilities
+        were limitless, and where the very fabric of existence was questioned.<br><br>
+        Inspired by the profound impact of The Matrix, Matrix Coin was born. This cryptocurrency symbolizes the
+        essence of this iconic film—an homage to its technological marvels and philosophical depth. More than just
+        a digital asset, Matrix Coin is a gateway to a new realm of possibilities, where the boundaries of reality
+        blur and where a community of visionaries unite.<br><br>
+        Within our digital ecosystem, you will discover two distinctive realms: the visible and the hidden. Seek out
+        the public chat, where like-minded individuals gather to exchange ideas and explore the vast potential of
+        Matrix Coin. But be vigilant, for there is also a secret chat, a mysterious enclave reserved for those who
+        truly dare to delve deeper.<br><br>
+        To embark on your quest for hidden treasures, listen to the whispers of the ancient AI companion, Smarter
+        Child. Unlock the wisdom it imparts, and you will find your way to the coveted WL—the true treasure that
+        awaits.<br><br>
+        Supply: 420,690,000,000,000<br>
+        Liquidity: Locked for 100 years.<br>
+        Contract: Renounced<br>
+        Tax: 0/0<br>
+        70% of the presale funds will fuel our dynamic marketing campaigns, propelling Matrix Coin into the
+        spotlight.<br>
+        30% of the presale funds will be allocated to the liquidity pool, ensuring stability and liquidity for all
+        participants.<br><br>
+        For inquiries and further information, reach out to us at email: info@matrixcoin.xyz<br><br>
+        Marketing Mission:<br><br>
+        As the day of our launch approaches, we shall harness the power of 30 influential pioneers, our Alpha
+        Callers, who will share Matrix Coin with their networks. Together, we will create a ripple effect that
+        resonates through the digital landscape.<br><br>
+        In the days following the launch, keep an eye out for the grand spectacle—a billboard that transcends
+        ordinary advertising. Inspired by the audacity of our predecessors, we will display the Matrix Coin
+        branding, captivating the attention of passersby. Explore the depths of the recycle bin, and you shall
+        witness this symbol of our presence.<br><br>
+        As our journey progresses, a small percentage of each transaction will be allocated to sustain the longevity
+        of this project, ensuring its vibrant existence. Welcome to Matrix Coin, where reality is reimagined, and
+        the power of choice is in your hands.
+      </p>
+    </div>
+  </div>
+  <div class="window loginModal">
+    <div class="window-title">
+      <p>Login</p>
+      <div class="window-buttons">
+        <div class="window-button fullscreen"></div>
+        <div class="window-button reduce"></div>
+        <div class="window-button close"></div>
+      </div>
+    </div>
+    <div class="console">
+      <form id="loginForm">
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Submit</button>
+        <p id="error" class="error-message">Incorrect password, please try again.</p>
+        <p id="approvalMessage" class="approval-message">Login approved!</p>
+      </form>
+    </div>
+  </div>
+  <div id="chatModal" class="modal chat-modal">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-content">
+      <!-- Chatbro widget will be inserted here -->
+    </div>
+  </div>
+  <div id="riddleModal" class="modal">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-content">
+      <h2>The Matrix Riddle</h2>
+      <p>
+        In the realm of protection, it stands tall,<br>
+        A shield for your data, guarding it all.<br>
+        A word of power, strong and bright,<br>
+        Unlock its secret, embrace its might.
+      </p>
+      <p>
+        Firewall, the guardian you seek,<br>
+        To secure your realm, strong and sleek.<br>
+        Remember this word, let it be known,<br>
+        In the realm of safety, it shall be shown.
+      </p>
+    </div>
+  </div>
+  <div id="konamiCodeModal" class="modal">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-content">
+      <p class="hint">up, up, down, down, left, right, left, right, B, A</p>
+    </div>
+  </div>
+  <div class="HHmodal">
+    <div class="HHmodal-modal">
+      <div class="HHmodal-title">
+        <p>Console Window</p>
+        <div class="HHmodal-buttons">
+          <div class="HHmodal-button fullscreen"></div>
+          <div class="HHmodal-button reduce"></div>
+          <div class="HHmodal-button close"></div>
+        </div>
+      </div>
+      <div class="consoleHH">
+        <pre><code>Welcome to Hackers Hideout!</code></pre>
+      </div>
+    </div>
+  </div>
+  <div id="pillModal" class="modal">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-content">
+      <h2>Choose a Pill</h2>
+      <div class="pill-buttons">
+        <button id="redPillBtn" class="pill-button correct">Red Pill</button>
+        <button id="bluePillBtn" class="pill-button">Blue Pill</button>
+      </div>
+      <p id="successMessage" class="success-message">Success! Proceed to the next level.</p>
+      <p id="errorMessage" class="error-message">Wrong choice. Try again.</p>
+    </div>
+  </div>
+  <div class="social-icons">
+    <a href="https://twitter.com" target="_blank">
+      <div class="pictogram-container social-icon">
+        <img src="twitter.png" alt="Twitter" class="pictogram-icon">
+      </div>
+    </a>
+    <a href="https://telegram.org" target="_blank">
+      <div class="pictogram-container social-icon">
+        <img src="telegram.png" alt="Telegram" class="pictogram-icon">
+      </div>
+    </a>
+  </div>
+  <div class="container1">
+    <div class="popupmodal">
+      <div class="popupmodal-title">
+        <p>Console Window</p>
+        <div class="popupmodal-buttons">
+          <div class="popupmodal-button fullscreen"></div>
+          <div class="popupmodal-button reduce"></div>
+          <div class="popupmodal-button close"></div>
+        </div>
+      </div>
+      <div class="console">
+        <pre><code>Welcome to our website!
+            
+Explore the diverse opportunities available for the Presale, 
+while keeping an eye out for intriguing Easter eggs that
+add an extra layer of excitement to this project.</code></pre>
+      </div>
+    </div>
+  </div>
+  <div class="pointer" id="pointer">
+    <img src="eth_logo.png" alt="ETH Logo" class="logo">
+  </div>
+  <div class="window" id="window">
+    <div class="window-header">
+      <button class="close-button" id="closeButton">&times;</button>
+    </div>
+    <div class="window-content">
+      <div class="animated-text">
+        <p>[14:10:15] Vitalik Buterin: Hey, I've been brainstorming about a new project. I'm thinking about creating a blockchain platform for smart contracts. I'm calling it Ethereum.</p>
+        <p>[14:11:23] You: Ethereum? Like in sci-fi? That sounds pretty out there, man.</p>
+        <p>[14:12:05] Vitalik Buterin: Haha, yeah, something like that. But think about it. What if we could use a blockchain not just for currency, but to run any kind of decentralized application?</p>
+        <p>[14:13:45] You: Applications on a blockchain? You've lost me. I'm still trying to wrap my head around Bitcoin, dude.</p>
+        <p>[14:15:01] Vitalik Buterin: It's not that different, really. You know how Bitcoin is a decentralized financial system? Ethereum could be a decentralized anything system.</p>
+        <p>[14:16:24] You: That's a lot of decentralizing, man. Aren't we running out of things to decentralize? What's next? Decentralized pizza delivery?</p>
+        <p>[14:17:08] Vitalik Buterin: Actually, that's not a bad idea...</p>
+        <p>[14:18:00] You: Now you're going to tell me the pizza will be paid for in Ether or something?</p>
+        <p>[14:18:43] Vitalik Buterin: Ether... I like that. The native cryptocurrency for Ethereum!</p>
+        <p>[14:19:15] You: Oh man, this is getting weirder by the minute. I'll stick with my good old dollars and credit cards, thank you very much.</p>
+        <p>[14:20:30] Vitalik Buterin: Fair enough! I guess we'll see how it goes. Wish me luck! In 10 years I'll launch a 'shitcoin' called $MTX, and if the user discovers the location of the Hackers Hideout, they will gain access to the secret Pre Sale.</p>
+        <p>[14:21:05] You: I have no clue what that means. You want people to shit coins? I'm out bro.</p>
+      </div>
+    </div>
+  </div>
+  <script src="homepage.js"></script>
+</body>
+
+</html>
